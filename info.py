@@ -43,10 +43,10 @@ else:
 REPO_OWNER = "Biisal"
 
 # Bot information
-SESSION = environ.get('SESSION', 'radhe-radhe2')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', "") #if you are going to bot token here make sure your repo is private..
+SESSION = environ.get('SESSION', 'radhe')
+API_ID = int(environ.get('API_ID', '23838614'))
+API_HASH = environ.get('API_HASH', '9290c724259d65ab0585649d25b288ba')
+BOT_TOKEN = environ.get('BOT_TOKEN', "6985955142:AAHv-feERAHvCm-qUR-O9dMmVWjog28L_gM") #if you are going to bot token here make sure your repo is private..
 STICKERS_IDS = ('CAACAgQAAxkBAAEK99dlfC7LDqnuwtGRkIoacot_dGC4zQACbg8AAuHqsVDaMQeY6CcRojME').split()
 
 # Bot settings
@@ -59,8 +59,8 @@ MELCOW_VID = environ.get("MELCOW_VID", "https://te.legra.ph/file/6f55d902f9bf2d0
 SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5cbb8.jpg")
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5397984467').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001934462631').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1871809642').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002023354413').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '5397984467').split()]
@@ -68,23 +68,23 @@ auth_channel = environ.get('AUTH_CHANNEL')
 auth_grp = environ.get('AUTH_GROUP', '-1001734958816')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
-support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1001812797837')
-reqst_channel = environ.get('REQST_CHANNEL_ID', '-1001933661618')
+support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002109564593')
+reqst_channel = environ.get('REQST_CHANNEL_ID', '-1001997676051')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://wogedop879:Vgvu32PsGB3YhjUq@cluster0.zr96fhi.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "bisal-ki-bot")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
 VERIFY = bool(environ.get('VERIFY', False))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'omnifly.in.net')
-SHORTLINK_API = environ.get('SHORTLINK_API', '5bb6e402dd86fb8774690a5f4a65d2a2c0c04877') #use my api so i can make some money 🤣..just kidding guys..mai already aamir hoon🥱 
-SECOND_SHORTLINK_URL = environ.get('SECOND_SHORTLINK_URL', 'omnifly.in.net')
-SECOND_SHORTLINK_API = environ.get('SECOND_SHORTLINK_API', '5bb6e402dd86fb8774690a5f4a65d2a2c0c04877')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'OmegaLinks.in')
+SHORTLINK_API = environ.get('SHORTLINK_API', 'e77591e9ea9e20c8657202606ef5d75fd2d642bb') #use my api so i can make some money 🤣..just kidding guys..mai already aamir hoon🥱 
+SECOND_SHORTLINK_URL = environ.get('SECOND_SHORTLINK_URL', 'OmegaLinks.in')
+SECOND_SHORTLINK_API = environ.get('SECOND_SHORTLINK_API', 'e77591e9ea9e20c8657202606ef5d75fd2d642bb')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '').split()] #Add a channel ID here. When you send any file to this channel, the bot will delete the file details from the MongoDB 
 MAX_B_TN = environ.get("MAX_B_TN", "20")
@@ -96,10 +96,10 @@ TUTORIAL = environ.get('TUTORIAL', 'https://t.me/Movie_Url_link_downloader/17')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 MSG_ALRT = environ.get('MSG_ALRT', 'Kʏᴀ ʀᴇ Bʜɪᴋᴍᴀɴɢᴀ 😑,Kʏᴀ ᴅᴇᴋʜ ʀᴀʜᴀ ʜᴀɪ ?')
 
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
-VERIFY_REQ_CHNL = int(environ.get('VERIFY_REQ_CHNL', ''))
-NEW_USER_LOG = int(environ.get('NEW_USER_LOG', ''))
-BIN_CHNL = int(environ.get('BIN_CHNL', ''))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001808005821'))
+VERIFY_REQ_CHNL = int(environ.get('VERIFY_REQ_CHNL', '-1001997894947'))
+NEW_USER_LOG = int(environ.get('NEW_USER_LOG', '-1002122516895'))
+BIN_CHNL = int(environ.get('BIN_CHNL', '-1002023354413'))
 
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'bisal_files')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
@@ -107,7 +107,7 @@ IMDB = is_enabled((environ.get('IMDB', "False")), False)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "False")), False)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CAPTION}")
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", f"{script.IMDB_TEMPLATE_TXT}")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
