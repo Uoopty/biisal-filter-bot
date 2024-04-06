@@ -455,16 +455,9 @@ async def start(client, message):
                 file_id=file_id,
                 protect_content=True if pre == 'filep' else False,
                 reply_markup=InlineKeyboardMarkup(
-                    [
-                        [
-                        InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🚩', url=f'http://t.me/{temp.U_NAME}?startgroup=true'),
-                        ],
+                   [
                      [
-                        InlineKeyboardButton("🔻ғᴀsᴛ ᴅᴏᴡɴʟᴏᴀᴅ ⚡", url=biisal_download),                   
-                     ],
-                   
-                     [
-                        InlineKeyboardButton('🔻ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ 👻', url=biisal_stream),                  
+                        InlineKeyboardButton('ʙᴀᴄᴋᴜᴘ ᴄʜᴀɴɴᴇʟ', url=f'https://t.me/FlixMod'),                  
                      ]
 
                     ]
@@ -480,7 +473,7 @@ async def start(client, message):
             if CUSTOM_FILE_CAPTION:
                 try:
                     f_caption=CUSTOM_FILE_CAPTION.format(file_name= '' if title is None else title, file_size='' if size is None else size, file_caption='')
-                except:
+                ext:
                     return
             await msg.edit_caption(f_caption)
             btn = [[
@@ -533,20 +526,13 @@ async def start(client, message):
         protect_content=True if pre == 'filep' else False,
         reply_markup=InlineKeyboardMarkup(
            [
-                        [
-                        InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🚩', url=f'http://t.me/{temp.U_NAME}?startgroup=true'),
-                        ],
                      [
-                        InlineKeyboardButton("🔻ғᴀsᴛ ᴅᴏᴡɴʟᴏᴀᴅ ⚡", url=biisal_download),                   
-                     ],
-                   
-                     [
-                        InlineKeyboardButton('🔻ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ 👻', url=biisal_stream),                  
+                        InlineKeyboardButton('ʙᴀᴄᴋᴜᴘ ᴄʜᴀɴɴᴇʟ', url=f'https://t.me/FlixMod'),                  
                      ]
 
                     ]
-        )
-    )
+                )
+            )
     await log_msg.reply_text(text=f"name : {message.from_user.mention}")
 
     del_txxt = await message.reply_text("<b>⚠️ᴛʜɪs ғɪʟᴇ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ᴀғᴛᴇʀ 5 ᴍɪɴᴜᴛᴇs\n\nᴘʟᴇᴀsᴇ ғᴏʀᴡᴀʀᴅ ᴛʜᴇ ғɪʟᴇ sᴏᴍᴇᴡʜᴇʀᴇ ʙᴇғᴏʀᴇ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ..</b>")
